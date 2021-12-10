@@ -53,8 +53,8 @@
 									</span>
 								</div>
 								<div class="birth_month">
-									<span id="birth_box">
-										<select id="month" aria-label="월">
+									<span class="birth_box">
+										<select class="month" aria-label="월">
 											<option value>월</option>
 											<option value="01">1</option>
 											<option value="02">2</option>
@@ -93,7 +93,7 @@
 						</li>
 						<li>
 							<h3 class="join_title">
-								<label for="mail">본인 확인 이메일</label>
+								<label for="mail">본인 확인 이메일(선택)</label>
 							</h3>
 							<span class="mail_box">
 								<input type="text" name="email" id="email" class="email" placeholder="선택입력" aria-label="선택입력" maxlength="100">
@@ -104,7 +104,7 @@
                 <label for="mobile">휴대전화</label>
               </h3>
               <div class="nation_container">
-                <select name="nation_num" id="nation_num">
+                <select name="nation_num" class="nation_num">
                   <option value="82">대한민국 +82</option>
                   <option value="241"></option>
                   <option value="592"></option>
@@ -129,7 +129,6 @@
 					</ul>
 						<div class="button">
 							<a href="#" class="join_btn" onclick="check_input()">가입하기</a>&nbsp;&nbsp;
-							<a href="#" class="reset_btn" onclick="reset_form()">취소하기</a>
 					</div>
 			</form>
 	</div>
