@@ -15,122 +15,125 @@
       <h1 class="hidden">유컴패니온</h1>
     </header>
     <form name="member_form" method="post" action="insert.php"> 
-      <ul>
-        <li>
-          <h3 class="join_title">
-            <label for="id">아이디</label>
-          </h3>
-          <span class="id_container">
-            <input type="text" name="id" id="id" class="id" required>
-            <span class="naver_url">@ucomp.co.kr</span>
-          </span>
-        </li>
-        <li>
-          <h3 class="join_title">
-            <label for="pass">비밀번호</label>
-          </h3>
-          <span class="pass_container">
-            <input type="password" name="pass" class="pass" required>
-          </span>
-        </li>
-        <li>
-          <h3 class="join_title">
-            <label for="pass_confirm">비밀번호 재확인</label>
-          </h3>	
-          <span class="pass_confirm_container">
-            <input type="password" name="pass_confirm" class="pass_confirm" required>
-          </span>
-        </li>
-        <li>
-          <h3 class="join_title">
-            <label for="name">이름</label>
-          </h3>	
-            <input type="text" name="name" id="name" required> 
-        </li>
-        <li>
-          <h3 class="join_title">
-            <label for="birth">생년월일</label>
-          </h3>	
-          <div class="birth_container">
-            <div class="birth_year">
-              <span id="birth_box">
-                <input type="text" name="year" class="year" placeholder="년(4자)" aria-label="년(4자)" maxlength="4">
+      <fieldset>
+        <legend>회원가입</legend>
+          <ul>
+            <li>
+              <h3 class="join_title">
+                <label for="id">아이디</label>
+              </h3>
+              <span class="id_container">
+                <input type="text" name="id" id="id" class="id" required>
+                <span class="naver_url">@ucomp.co.kr</span>
               </span>
-            </div>
-            <div class="birth_month">
-              <span class="birth_box">
-                <select class="month" aria-label="월">
-                  <option value>월</option>
-                  <option value="01">1</option>
-                  <option value="02">2</option>
-                  <option value="03">3</option>
-                  <option value="04">4</option>
-                  <option value="05">5</option>
-                  <option value="06">6</option>
-                  <option value="07">7</option>
-                  <option value="08">8</option>
-                  <option value="09">9</option>
-                  <option value="10">10</option>
-                  <option value="11">11</option>
-                  <option value="12">12</option>
+            </li>
+            <li>
+              <h3 class="join_title">
+                <label for="pass">비밀번호</label>
+              </h3>
+              <span class="pass_container">
+                <input type="password" name="pass" class="pass" required>
+              </span>
+            </li>
+            <li>
+              <h3 class="join_title">
+                <label for="pass_confirm">비밀번호 재확인</label>
+              </h3>	
+              <span class="pass_confirm_container">
+                <input type="password" name="pass_confirm" class="pass_confirm" required>
+              </span>
+            </li>
+            <li>
+              <h3 class="join_title">
+                <label for="name">이름</label>
+              </h3>	
+                <input type="text" name="name" id="name" required> 
+            </li>
+            <li>
+              <h3 class="join_title">
+                <label for="birth">생년월일</label>
+              </h3>	
+              <div class="birth_container">
+                <div class="birth_year">
+                  <span id="birth_box">
+                    <input type="text" name="year" class="year" placeholder="년(4자)" aria-label="년(4자)" maxlength="4">
+                  </span>
+                </div>
+                <div class="birth_month">
+                  <span class="birth_box">
+                    <select class="month" aria-label="월">
+                      <option value>월</option>
+                      <option value="01">1</option>
+                      <option value="02">2</option>
+                      <option value="03">3</option>
+                      <option value="04">4</option>
+                      <option value="05">5</option>
+                      <option value="06">6</option>
+                      <option value="07">7</option>
+                      <option value="08">8</option>
+                      <option value="09">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
+                  </span>
+                </div>
+                <div class="birth_date">
+                  <span class="birth_box">
+                    <input type="text" name="date" class="date" placeholder="일" aria-label="일" maxlength="2">
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h3 class="join_title">
+                <label for="gender">성별</label>
+              </h3>
+              <div class="gender_container" id="gender_box">
+                <select name="gender" id="gender" class="gender" aria-label="성별">
+                  <option value selected>성별</option>
+                  <option value="M">남자</option>
+                  <option value="F">여자</option>
+                  <option value="U">선택 안함</option>
                 </select>
+              </div>
+            </li>
+            <li>
+              <h3 class="join_title">
+                <label for="mail">본인 확인 이메일<span class="choice">(선택)</span></label>
+              </h3>
+              <span class="mail_box">
+                <input type="text" name="email" id="email" class="email" placeholder="선택입력" aria-label="선택입력" maxlength="100">
               </span>
-            </div>
-            <div class="birth_date">
-              <span class="birth_box">
-                <input type="text" name="date" class="date" placeholder="일" aria-label="일" maxlength="2">
-              </span>
-            </div>
+            </li>
+            <li>
+              <h3 class="join_title">
+                <label for="mobile">휴대전화</label>
+              </h3>
+              <div class="nation_container">
+                <select name="nation_num" class="nation_num">
+                  <option value="82">대한민국 +82</option>
+                  <option value="241"></option>
+                  <option value="592"></option>
+                </select>
+              </div>
+              <div class="mobile_container">
+                <span class="mobile_box">
+                  <input type="text" class="mobile_num" placeholder="전화번호 입력" aria-label="전화번호 입력">
+                </span>
+                <a href="#">
+                  <span class="ver">인증번호 받기</span>
+                </a>
+              </div>
+              <div class="ver_container">
+                <input type="text" class="verify" placeholder="인증번호 입력하세요" aria-label="인증번호 입력하세요">
+              </div>
+            </li>
+          </ul>
+          <div class="button">
+            <a href="#" class="join_btn" onclick="check_input()">가입하기</a>&nbsp;&nbsp;
           </div>
-        </li>
-        <li>
-          <h3 class="join_title">
-            <label for="gender">성별</label>
-          </h3>
-          <div class="gender_container" id="gender_box">
-            <select name="gender" id="gender" class="gender" aria-label="성별">
-              <option value selected>성별</option>
-              <option value="M">남자</option>
-              <option value="F">여자</option>
-              <option value="U">선택 안함</option>
-            </select>
-          </div>
-        </li>
-        <li>
-          <h3 class="join_title">
-            <label for="mail">본인 확인 이메일<span class="choice">(선택)</span></label>
-          </h3>
-          <span class="mail_box">
-            <input type="text" name="email" id="email" class="email" placeholder="선택입력" aria-label="선택입력" maxlength="100">
-          </span>
-        </li>
-        <li>
-          <h3 class="join_title">
-            <label for="mobile">휴대전화</label>
-          </h3>
-          <div class="nation_container">
-            <select name="nation_num" class="nation_num">
-              <option value="82">대한민국 +82</option>
-              <option value="241"></option>
-              <option value="592"></option>
-            </select>
-          </div>
-          <div class="mobile_container">
-            <span class="mobile_box">
-              <input type="text" class="mobile_num" placeholder="전화번호 입력" aria-label="전화번호 입력">
-            </span>
-            <a href="#">
-              <span class="ver">인증번호 받기</span>
-            </a>
-          </div>
-          <div class="ver_container">
-            <input type="text" class="verify" placeholder="인증번호 입력하세요" aria-label="인증번호 입력하세요">
-          </div>
-        </li>
-      </ul>
-      <div class="button">
-        <a href="#" class="join_btn" onclick="check_input()">가입하기</a>&nbsp;&nbsp;
-      </div>
+      </fieldset>  
   </form>
   <footer>
     <ul>
