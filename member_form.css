@@ -21,11 +21,16 @@ body{
   color: #000;
   line-height: 1.5;
 }
+select {
+  appearance: none;
+}
+
 ol, ul{list-style: none;}
 table{border-collapse: collapse; border-spacing: 0;}
 address{font-style: normal}
 a{color: #333; text-decoration: none}
 img{border: 0; vertical-align: top}
+
 
 .hidden{
   overflow: hidden;
@@ -41,6 +46,11 @@ img{border: 0; vertical-align: top}
   font-weight: 400;
   color: #8e8e8e;
 }
+.sel{
+  background: url(/sign_up_form-main/images/down_arrow.jpg) 97% 70% no-repeat;
+  background-size: 20px 8px;
+}
+
 legend{
   display: none;
 }
@@ -171,7 +181,7 @@ input:focus{
   z-index: 10;
   margin-left: 10px;
 }
-#content form .birth_container{
+.birth_container{
   display: table;
   width: 100%;
 }
@@ -200,35 +210,30 @@ input:focus{
   width: 100%;
   height: 51px;
   border: solid 1px #dadada;
-  padding: 10px 110px 10px 14px;
   background: #fff;
   box-sizing: border-box;
-  padding: 11px 13px;
 }
 .birth_box .month{
   width: 100%;
-  height: 29px;
+  height: 40px;
   font-size: 15px;
   line-height: 18px;
   color: #000;
-  padding: 7px 7px 6px 0px;
   border: none;
   border-radius: 0;
+  background-position: 94% 66%;
+  padding-left: 15px;
+  padding-top: 15px;
 }
 .gender_container{
   display: block;
   width: 100%;
-  padding-right: 7px;
   box-sizing: border-box;
   position: relative;
   height: 51px;
   border: solid 1px #dadada;
-  padding: 10px 13px 10px 14px;
   background: #fff;
   box-sizing: border-box;
-}
-.gender_container.focus{
-  border: 1px solid #03c75a;
 }
 .gender_container:focus-within{
   border: 1px solid #03c75a;
@@ -242,28 +247,23 @@ select{
   background-size: 20px 8px;
 }
 .gender{
-  width: 95%;
-  height: 29px;
-  padding: 7px 6px 7px 0;
+  width: 100%;
+  height: 35px;
+  padding-left: 15px;
+  padding-top: 14px;
   font-size: 15px;
   line-height: 18px;
   color: #000;
   border-radius: 0;
-  height: 47px;
-  position: absolute;
-  top: 1px;
-  right: 13px;
   border: none;
 }
 .nation_container{
   display: block;
   width: 100%;
-  padding-right: 7px;
   box-sizing: border-box;
   position: relative;
   height: 51px;
   border: solid 1px #dadada;
-  padding: 10px 13px 10px 3px;
   background: #fff;
   box-sizing: border-box;
 }
@@ -273,9 +273,10 @@ select{
 .nation_container .nation_num{
   width: 100%;
   font-size: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
   line-height: 18px;
   color: #000;
-  padding: 7px 8px 6px 7px;
   border: none;
   border-radius: 0;
 }
@@ -285,16 +286,18 @@ select{
 .ver_container{
   margin-top: 10px;
 }
-.button {
+button {
+  width: 100%;
   background-color: #03c75a;
   font-size: 18px;
   text-align: center;
   border: 1px solid #dadada;
-  padding: 10px;
+  padding: 13px;
   margin-top: 30px;
   margin-bottom: 9px;
+  cursor: pointer;
 }
-.button a{
+button .join_btn{
   color: #fff;
 }
 footer{
