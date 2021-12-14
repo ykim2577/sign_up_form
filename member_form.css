@@ -41,6 +41,19 @@ img{border: 0; vertical-align: top}
   height: 1px;
   color: #fff;
 }
+header{
+  /* position: relative; */
+  /* overflow: hidden;
+  box-sizing: border-box;
+  margin: 0 auto; */
+  text-align: center;
+  max-width: 768px;
+  min-width: 460px;
+}
+header img{
+  width: 75px;
+  height: 75px;
+}
 .join_title .choice{
   font-size: 12px;
   font-weight: 400;
@@ -50,22 +63,8 @@ img{border: 0; vertical-align: top}
   background: url(/sign_up_form-main/images/down_arrow.jpg) 97% 70% no-repeat;
   background-size: 20px 8px;
 }
-
 legend{
   display: none;
-}
-header{
-  position: relative;
-  overflow: hidden;
-  box-sizing: border-box;
-  margin: 0 auto;
-  text-align: center;
-  max-width: 768px;
-  min-width: 460px;
-}
-header img{
-  width: 75px;
-  height: 75px;
 }
 input:focus{
   outline: 1px solid #03c75a;;
@@ -79,10 +78,13 @@ input:focus{
   background: #f5f6f7;
 }
 #content form .join_title{
-  margin: 19px 0 8px;
+  margin: 20px 0 10px 0;
   font-size: 14px;
   font-weight: 700;
   position: relative;
+}
+#content form ul li:nth-child(2){
+  height: 80px;
 }
 #content form input{
   font-size: 15px;
@@ -95,6 +97,7 @@ input:focus{
   background: #fff;
   box-sizing: border-box;
 }
+
 #content form .id_container{
   display: block;
   position: relative;
@@ -104,6 +107,7 @@ input:focus{
   padding: 10px 110px 10px 14px;
   background: #fff;
   box-sizing: border-box;
+  
 }
 #content form .id{
   display: block;
@@ -157,11 +161,13 @@ input:focus{
   cursor: pointer;
 }
 .mobile_container{
+  overflow: hidden;
   position: relative;
   margin-top: 10px;
 }
 .mobile_container .mobile_box {
   position: relative;
+  float: left;
   display: inline-block;
   height: 51px;
   width: 70%;
@@ -175,6 +181,7 @@ input:focus{
 .mobile_container a{
   background-color: #03c75a;
   color: #fff;
+  float: right;
   border: solid 1px #dadada;
   display: inline-block;
   padding: 14px 23px;
