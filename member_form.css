@@ -12,9 +12,13 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%;}
+time, mark, audio, video{
+  margin: 0; padding: 0; border: 0; font-size: 100%;
+}
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section{display: block;}
+footer, header, hgroup, menu, nav, section{
+  display: block;
+}
 body{
   font-family: "돋움", Dotum,"굴림",Gulim, sans-serif; 
   font-size: 14px;
@@ -24,13 +28,11 @@ body{
 select {
   appearance: none;
 }
-
 ol, ul{list-style: none;}
 table{border-collapse: collapse; border-spacing: 0;}
 address{font-style: normal}
 a{color: #333; text-decoration: none}
 img{border: 0; vertical-align: top}
-
 
 .hidden{
   overflow: hidden;
@@ -43,10 +45,6 @@ img{border: 0; vertical-align: top}
 }
 
 header{
-  /* position: relative; */
-  /* overflow: hidden;
-  box-sizing: border-box;
-  margin: 0 auto; */
   text-align: center;
   max-width: 768px;
   min-width: 460px;
@@ -92,9 +90,6 @@ input:focus{
   font-weight: 700;
   position: relative;
 }
-/* #content form ul li:nth-child(2){
-  height: 80px;
-} */
 #content form input{
   font-size: 15px;
   position: relative;
@@ -106,7 +101,6 @@ input:focus{
   background: #fff;
   box-sizing: border-box;
 }
-
 #content form .id_container{
   display: block;
   position: relative;
@@ -222,6 +216,7 @@ input:focus{
 }
 .birth_month:focus-within{
   outline: 1px solid #03c75a;
+  
 }
 .birth_month .birth_box{
   display: block;
@@ -291,6 +286,7 @@ select{
 }
 .nation_container .nation_num{
   width: 100%;
+  height: 35px;
   font-size: 15px;
   padding-left: 15px;
   padding-top: 15px;
