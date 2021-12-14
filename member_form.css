@@ -41,6 +41,7 @@ img{border: 0; vertical-align: top}
   height: 1px;
   color: #fff;
 }
+
 header{
   /* position: relative; */
   /* overflow: hidden;
@@ -67,7 +68,8 @@ legend{
   display: none;
 }
 input:focus{
-  outline: 1px solid #03c75a;;
+  outline: 1px solid #03c75a;
+  display: block;
 }
 #content {
   width: 500px;
@@ -77,15 +79,22 @@ input:focus{
   padding: 30px;
   background: #f5f6f7;
 }
+#content form fieldset .text_mesg{
+  display: none;
+  font-size: 12px;
+  color: #ff0000;
+  font-weight: 400;
+  line-height: 14px;
+}
 #content form .join_title{
   margin: 20px 0 10px 0;
   font-size: 14px;
   font-weight: 700;
   position: relative;
 }
-#content form ul li:nth-child(2){
+/* #content form ul li:nth-child(2){
   height: 80px;
-}
+} */
 #content form input{
   font-size: 15px;
   position: relative;
@@ -127,18 +136,21 @@ input:focus{
   line-height: 18px;
   color: #8e8e8e;
 }
+.pass_container{
+  position: relative;
+}
 .pass_container::after{
   content: "";
   display: inline-block;
-  position: relative;
-  top: -28px;
-  right: -460px;
+  position: absolute;
+  top: 23px;
+  left: 460px;
   width: 24px;
   height: 24px;
   margin-top: -12px;
   background-image: url(/sign_up_form-main/images/m_icon_pw_step.png);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: -25px 0;
   background-size: 125px 75px;
   cursor: pointer;
 }
