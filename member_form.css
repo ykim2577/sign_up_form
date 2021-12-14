@@ -216,7 +216,7 @@ input:focus{
   width: 160px;
   vertical-align: middle;
 }
-.birth_year+.birth_month{
+.birth_year .birth_month{
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -304,6 +304,9 @@ select{
 }
 .ver_container{
   margin-top: 10px;
+}
+.ver_container input{
+  background: #f5f6f7;
 }
 button {
   width: 100%;
