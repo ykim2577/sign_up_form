@@ -65,8 +65,9 @@ header img{
 legend{
   display: none;
 }
-input:focus{
-  outline: 1px solid #03c75a;
+#content input:focus{
+  outline: 0;
+  border: 1px solid #03c75a;
   display: block;
 }
 #content {
